@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atri Ghosh | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">Atri<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <span class="greeting">Hello, I'm</span>
+            <h1>Atri Ghosh</h1>
+            <p class="tagline">Robotics & AI Student | Full-Stack Developer & Innovator</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a student specializing in Robotics and AI at the University of Engineering and Management, Newtown, Kolkata. My technical expertise spans full-stack web development, control systems, and autonomous telemetry applications. Beyond coding and robotics, I enjoy creating hand-drawn, space-themed graphite sketches portraying nebulae and cosmic phenomena.</p>
+                </div>
+                <div class="education-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <p><strong>B.Tech in Robotics and AI</strong></p>
+                    <p>University of Engineering and Management, Newtown, Kolkata</p>
+                    <p class="text-muted">Enrollment: 12024002038056</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-badge"><i class="fab fa-html5"></i> HTML5</div>
+                <div class="skill-badge"><i class="fab fa-css3-alt"></i> CSS3</div>
+                <div class="skill-badge"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill-badge"><i class="fas fa-code-branch"></i> Responsive Design</div>
+                <div class="skill-badge"><i class="fas fa-robot"></i> Robotics & AI</div>
+                <div class="skill-badge"><i class="fas fa-database"></i> Database Management</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Airproof-x402</h3>
+                        <p>A hardware-attested environmental telemetry and autonomous carbon settlement platform developed for hackathons.</p>
+                        <div class="project-tags">
+                            <span>IoT</span><span>Telemetry</span><span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>A responsive portfolio website showcasing profile, technical skills, projects, and structured contact mechanisms.</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>To-Do List & Web Apps</h3>
+                        <p>Interactive task management web applications featuring CRUD operations and localStorage persistence built during internships.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span><span>DOM</span><span>Web Storage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <small class="error-msg"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <small class="error-msg"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Type your message here..."></textarea>
+                    <small class="error-msg"></small>
+                </div>
+                <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+                <p id="successMessage" class="success-msg"></p>
+            </form>
+            
+            <!-- Social Links & Direct Email -->
+            <div class="social-links-container" style="text-align: center; margin-top: 2.5rem;">
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">Or connect with me directly:</p>
+                <div style="display: flex; justify-content: center; gap: 1.5rem; font-size: 1.5rem;">
+                    <a href="https://github.com/Atri-Ghosh" target="_blank" style="color: var(--text-main); transition: color 0.3s;"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/atri-ghosh-6696463b8" target="_blank" style="color: var(--text-main); transition: color 0.3s;"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:atrighosh2006@gmail.com" style="color: var(--text-main); transition: color 0.3s;"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Atri Ghosh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
